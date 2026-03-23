@@ -32,7 +32,7 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-4">
             <Link
-              href="https://wa.me/6287840866596?text=Halo%20RinjaniTech,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20IT."
+              href="https://wa.me/6287840866596?text=Halo%20PolariusTech,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20IT."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-primary font-bold px-7 py-3.5 rounded-full hover:bg-yellow-300 hover:text-primary transition-all duration-300 shadow-lg"
