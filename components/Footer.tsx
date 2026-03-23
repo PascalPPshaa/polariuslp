@@ -34,8 +34,6 @@ export default function Footer() {
     <footer id="kontak" className="bg-[#0a0f1a] text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-          
-          {/* Brand & Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-6">
               <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
@@ -50,8 +48,6 @@ export default function Footer() {
               Kami membantu bisnis mengakselerasi pertumbuhan melalui inovasi software dan 
               infrastruktur IT yang tangguh.
             </p>
-
-            {/* Contact Info */}
             <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
@@ -68,7 +64,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links Sections */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
               <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">{title}</h4>
@@ -89,7 +84,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-800/50 flex flex-col md:row items-center justify-between gap-6">
           <div className="text-sm">
             © {new Date().getFullYear()} <span className="text-white font-medium">Polarius Tech Consulting</span>. Seluruh Hak Cipta Dilindungi.

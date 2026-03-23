@@ -56,7 +56,6 @@ export default function FeaturesSection() {
   return (
     <section id="layanan" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="max-w-2xl mb-16">
           <div className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
             Layanan Unggulan
@@ -66,7 +65,6 @@ export default function FeaturesSection() {
           </h2>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           {features.map(({ icon: Icon, title, desc }, i) => (
             <div key={i} className="group relative">

@@ -3,7 +3,6 @@ import { ArrowDownRight } from "lucide-react";
 export default function AppSection() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center"
@@ -17,7 +16,6 @@ export default function AppSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text */}
           <div>
             <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-white/30">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
@@ -65,8 +63,6 @@ export default function AppSection() {
               </a>
             </div>
           </div>
-
-          {/* Phone mockup */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-56 h-[450px] bg-white/10 backdrop-blur-sm rounded-[3rem] border-2 border-white/20 flex items-center justify-center shadow-2xl">
@@ -80,7 +76,6 @@ export default function AppSection() {
                   </div>
                 </div>
               </div>
-              {/* Floating elements */}
               <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-3 shadow-xl">
                 <p className="text-xs font-bold text-gray-800">📦 Testimoni</p>
                 <p className="text-primary font-extrabold text-lg">1,240+</p>

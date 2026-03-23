@@ -32,7 +32,6 @@ export default function NewsSection() {
   return (
     <section id="berita" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
             Update berita terbaru kami
@@ -45,14 +44,12 @@ export default function NewsSection() {
           </Link>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {news.map((item, i) => (
             <article
               key={i}
               className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={item.img}
@@ -63,8 +60,6 @@ export default function NewsSection() {
                   {item.category}
                 </span>
               </div>
-
-              {/* Body */}
               <div className="p-6">
                 <div className="flex items-center gap-4 text-xs text-gray-400 mb-3">
                   <span className="flex items-center gap-1">
