@@ -1,5 +1,6 @@
 import { CheckCircle2, BadgeCheck } from "lucide-react";
 import Link from "next/link";
+import Image from 'next/image';
 
 const highlights = [
   "Solusi teknologi yang terukur dan skalabel",
@@ -10,43 +11,33 @@ const highlights = [
 
 export default function AboutSection() {
   return (
-    /* KUNCI PERBAIKAN: 
-       Ganti 'py-28' menjadi 'pt-48 pb-28' (atau pt-60 jika kartu masih menempel).
-       Ini memberikan ruang bagi kartu melayang dari file sebelah.
-    */
     <section id="tentang" className="pt-48 pb-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
-          {/* Left — Images + Stat (Sudah disesuaikan ke konteks IT) */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
-              {/* Gambar 1: Coding/Software */}
               <div className="rounded-2xl overflow-hidden h-52">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80"
                   alt="Modern Coding Workspace"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Stat card */}
               <div className="bg-primary rounded-2xl flex flex-col items-center justify-center h-52 shadow-lg">
                 <span className="text-5xl font-extrabold text-white">12+</span>
                 <span className="text-white/80 font-semibold mt-2 text-lg text-center">
                   Tahun Inovasi
                 </span>
               </div>
-              {/* Gambar 2: Server/Data Center */}
               <div className="rounded-2xl overflow-hidden h-52">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80"
                   alt="Server Room"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Gambar 3: Business Meeting/Strategy */}
               <div className="rounded-2xl overflow-hidden h-52">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
                   alt="IT Consultation Meeting"
                   className="w-full h-full object-cover"
@@ -55,7 +46,6 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right — Text */}
           <div>
             <div className="section-badge inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-bold mb-4">
               <BadgeCheck className="w-4 h-4" />
@@ -71,7 +61,6 @@ export default function AboutSection() {
               perangkat lunak dan infrastruktur yang tidak hanya canggih, tapi juga berdampak nyata.
             </p>
 
-            {/* Highlights */}
             <ul className="space-y-3 mb-8">
               {highlights.map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-700">
